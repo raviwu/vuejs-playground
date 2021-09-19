@@ -20,6 +20,7 @@
         <input type="text" v-on:input="setNum">
         <button v-on:click="add">Add {{ num }}</button>
         <button v-on:click="remove">Remove {{ num }}</button>
+        <p v-once>Starting Result: {{ counter }}</p>
         <p>Result: {{ counter }}</p>
         <input type="text" v-on:input="setName($event, 'Wu')" v-on:keyup.enter="confirmName">
         <p>Your name: {{ confirmedName }}</p>
