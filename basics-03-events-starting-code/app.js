@@ -7,6 +7,9 @@ const app = Vue.createApp({
         };
     },
     methods: {
+        submitForm() {
+            alert('Submitted');
+        },
         setNum(event) {
             this.num = parseInt(event.target.value);
         },
